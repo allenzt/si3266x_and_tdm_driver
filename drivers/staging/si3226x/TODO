@@ -1,0 +1,8 @@
+1) mutex_lock(&slic_chr_dev_lock);
+This locking is very heavy handed and should be reworked
+
+2) SLIC driver works unstable when compiled as module, loaded, then unloaded and finally reloaded again.
+
+3) Current version of Si3226x SLIC driver is limited. It implements only base functionality such as Answer, Hangup, receive DTMF, send DTMF, send Caller ID.
+
+
